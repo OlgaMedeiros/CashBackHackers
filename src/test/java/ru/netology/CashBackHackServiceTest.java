@@ -27,5 +27,18 @@ class CashBackHackServiceTest {
         int actual = cashBack.remain(amount);
         int expected = 1;
 
+        Assert.assertEquals(actual, expected);
+    }
+
+    @Test
+    void remain1000() {    //метод
+
+        CashBackHackService cashBack = new CashBackHackService();
+        int amount = 1000;
+
+        int actual = cashBack.remain(amount);
+        int expected = 0;
+
+        Assert.assertEquals(actual, expected);
     }
 }
